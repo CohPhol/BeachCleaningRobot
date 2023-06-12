@@ -3,7 +3,7 @@ import cv2
 import numpy as py
 import os
 
-model_name = 'abc.xlsx'
+model_name = 'best.pt'
 model_location = os.getcwd() + f'\\model\\{model_name}'
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_location)
